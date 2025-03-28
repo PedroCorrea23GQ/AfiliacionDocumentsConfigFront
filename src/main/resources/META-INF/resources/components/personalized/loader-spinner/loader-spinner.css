@@ -1,0 +1,73 @@
+.circulo-loading-body {
+    background: #f9fafc;
+    width: 100%;
+    height: auto;
+}
+
+.circulo-loading, .circulo-loading .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circulo-loading .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: inherit;
+    color: #003e56;
+}
+
+.circulo-loading .logo span:first-child {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.circulo-loading .logo span:last-child {
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.circulo-loading .circle-yellow {
+    width: 115%;
+    height: 115%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: transparent;
+    border: 5px solid #c7da00;
+    animation: rotate 1200ms linear infinite;
+}
+
+.circulo-loading .circle-blue {
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(farthest-side, #73b3c2 95%, #0000) top / 10px 10px no-repeat, conic-gradient(#0000 80%, #74b4c2);
+    border-width: 4px;
+    -webkit-mask: radial-gradient(circle closest-side, #0000 calc(100% - 9px), #000 0%);
+    animation: mirror-spinner 1s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0) scale(1);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.1);
+    }
+}
+
+@keyframes mirror-spinner {
+    to {
+        transform: rotate(.5turn);
+    }
+}

@@ -6,8 +6,8 @@
 }
 
 .table-container {
-    width: 100%;
-    overflow-x: auto;
+    position: relative;
+    min-height: 200px;
 }
 
 .header-container {
@@ -22,4 +22,18 @@
 
 .title-documentsConfig {
     font-size: 15px;;
+}
+
+.circulo-loading-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

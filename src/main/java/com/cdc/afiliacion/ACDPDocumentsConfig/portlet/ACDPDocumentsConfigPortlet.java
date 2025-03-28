@@ -23,6 +23,9 @@ import org.osgi.service.component.annotations.Component;
 		"com.liferay.portlet.header-portlet-css=/components/generics/genericTable/genericTable.css",
 		"com.liferay.portlet.footer-portlet-javascript=/components/generics/genericSearchPlugin/genericSearchPlugin.js",
 		"com.liferay.portlet.header-portlet-css=/components/generics/genericSearchPlugin/genericSearchPlugin.css",
+		/* Personalized Plugins */
+		"com.liferay.portlet.footer-portlet-javascript=/components/personalized/loader-spinner/loader-spinner.js",
+		"com.liferay.portlet.header-portlet-css=/components/personalized/loader-spinner/loader-spinner.css",
 		/* Pages */
 		"com.liferay.portlet.footer-portlet-javascript=/pages/dashboardDocumentsConfig/dashboardDocumentsConfig.js",
 		"com.liferay.portlet.header-portlet-css=/pages/dashboardDocumentsConfig/dashboardDocumentsConfig.css",

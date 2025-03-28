@@ -5,9 +5,14 @@
     <div class="header-container">
         <span class="title-documentsConfig">Configurador de documentos</span>
     </div>
-    <div id="searchContainer">
-        <input type="text" class="table-search-input" placeholder="Buscar tipo de documento">
-        <i class="fa-solid fa-magnifying-glass"></i>
+    <div class="table-container">
+        <div id="searchContainer" style="display: none;">
+            <input type="text" class="table-search-input" placeholder="Buscar tipo de documento">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="gTableContainer"></div>
+        <div id="spinner-loader" class="circulo-loading-body" style="display: none;">
+            <%@ include file="/components/personalized/loader-spinner/loader-spinner.jsp" %>
+        </div>
     </div>
-    <div id="gTableContainer"></div>
 </div>
