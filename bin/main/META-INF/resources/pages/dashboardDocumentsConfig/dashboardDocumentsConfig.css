@@ -9,3 +9,17 @@
     width: 100%;
     overflow-x: auto;
 }
+
+.header-container {
+    background-color: #53a040;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    width: 100%;
+    text-align: left;
+    text-indent: 30px;
+}
+
+.title-documentsConfig {
+    font-size: 15px;;
+}

@@ -1,0 +1,42 @@
+#searchContainer {
+    margin: 20px 0px 20px 30px;
+    width: 55%;
+    text-align: left;
+    justify-content: center;
+    display: flex;
+    position: relative; /* Para permitir la posición absoluta del ícono */
+}
+
+/* Contenedor del input de búsqueda */
+.table-search-input {
+    width: 100%;
+    padding: 10px 30px 10px 10px; /* Añadir padding a la derecha para dejar espacio al ícono */
+    border: 4px solid #6fba5c;
+    border-radius: 15px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del input */
+}
+
+/* Estilo para cuando el input recibe foco */
+.table-search-input:focus {
+    outline: none;
+    border-color: #53a040;
+}
+
+/* Estilo para el placeholder */
+.table-search-input::placeholder {
+    color: #888;
+}
+
+/* Estilo para el ícono dentro del input */
+#searchContainer i {
+    position: absolute;
+    right: 10px; /* Coloca el ícono a la derecha con un margen */
+    top: 50%;
+    transform: translateY(-50%); /* Centra el ícono verticalmente */
+    color: #6fba5c; /* Color del ícono */
+    font-size: 18px; /* Ajusta el tamaño del ícono */
+    pointer-events: none; /* Evita que el ícono interfiera con la interacción del input */
+}

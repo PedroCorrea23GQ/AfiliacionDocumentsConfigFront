@@ -2,6 +2,12 @@
 <%@ include file="/init.jsp" %>
 
 <div class="dashboard-config">
-    <h1>Configurador de documentos</h1>
+    <div class="header-container">
+        <span class="title-documentsConfig">Configurador de documentos</span>
+    </div>
+    <div id="searchContainer">
+        <input type="text" class="table-search-input" placeholder="Buscar tipo de documento">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
     <div id="gTableContainer"></div>
 </div>

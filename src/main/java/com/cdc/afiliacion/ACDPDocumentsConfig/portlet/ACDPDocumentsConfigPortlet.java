@@ -17,11 +17,16 @@ import org.osgi.service.component.annotations.Component;
 	property = {
 		"com.liferay.portlet.display-category=category.sample",
 		"com.liferay.portlet.header-portlet-css=/css/main.css",
-		"com.liferay.portlet.header-portlet-css=/pages/dashboardDocumentsConfig/dashboardDocumentsConfig.css",
-		"com.liferay.portlet.header-portlet-css=/components/generics/genericTable/genericTable.css",
 		"com.liferay.portlet.instanceable=true",
+		/* Generic Plugins */
 		"com.liferay.portlet.footer-portlet-javascript=/components/generics/genericTable/genericTable.js",
+		"com.liferay.portlet.header-portlet-css=/components/generics/genericTable/genericTable.css",
+		"com.liferay.portlet.footer-portlet-javascript=/components/generics/genericSearchPlugin/genericSearchPlugin.js",
+		"com.liferay.portlet.header-portlet-css=/components/generics/genericSearchPlugin/genericSearchPlugin.css",
+		/* Pages */
 		"com.liferay.portlet.footer-portlet-javascript=/pages/dashboardDocumentsConfig/dashboardDocumentsConfig.js",
+		"com.liferay.portlet.header-portlet-css=/pages/dashboardDocumentsConfig/dashboardDocumentsConfig.css",
+
 		"javax.portlet.display-name=ACDPDocumentsConfig",
 		"javax.portlet.init-param.template-path=/",
 		"javax.portlet.init-param.view-template=/view.jsp",
